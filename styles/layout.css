@@ -1,0 +1,59 @@
+#app{
+  margin: 0;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 100%;
+  margin: 0 auto;
+
+  height: 100vh;
+  overflow: hidden;
+}
+
+aside {
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  max-height: 100vh;
+
+  & .aside-container {
+    max-width: 30rem;
+
+    & img {
+      position: absolute;
+      max-width: 30rem;
+      object-fit: contain;
+      border-radius: .5rem;
+    }
+  }
+  
+  & .box-logo {
+    box-sizing: border-box;
+    padding: 1.5rem;
+    
+    & img {
+      position: relative;
+      max-height: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    & h1 {
+      position: relative;
+      font: var(--logo);
+      color: var(--pink);
+    }
+  
+    & p {
+      position: relative;
+      font: 100 1.25rem/1.5 var(--font-family);
+      color: var(--text-heading);
+    }
+  }
+  
+}
+
+main {
+  overflow: auto;
+  justify-items: center;
+
+  & .main-container {
+    padding: 4rem 10rem 1rem 5rem;
+  }
+}
