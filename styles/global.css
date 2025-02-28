@@ -50,3 +50,8 @@ body {
   background-color: var(--shape-background);
   color: var(--text-body);
 }
+
+img{
+  max-width: 100%;
+  height: auto;
+}
