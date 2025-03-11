@@ -1,0 +1,58 @@
+.radio-wrapper {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+  gap: .25rem;
+  padding: .25rem;
+  background-color: var(--input-base);
+}
+
+.radio-inner {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  gap: .25rem;
+  position: relative;
+  border-radius: .5rem;
+  padding: .25rem;
+  margin: .15rem;
+
+  & .radio-image-presencial {
+    justify-content: center;
+    flex: 0 0 1rem;
+    height: 1rem;
+    background-image: url(../../assets/Icons/building-2.svg);
+  }
+
+  & .radio-image-online {
+    flex: 0 0 1rem;
+    height: 1rem;
+    background-image: url(../../assets/Icons/video.svg);
+
+  }
+
+  & img {
+    max-width: 1rem;
+  }
+
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  &:has(:checked){
+    background-color: var(--input-stroke);
+    & .radio-image-presencial {
+      background-image: url(../../assets/Icons/building-2-hover.svg);
+    }
+
+    & .radio-image-online {
+      background-image: url(../../assets/Icons/video-hover.svg);
+    }
+  }
+}
