@@ -20,3 +20,14 @@ h2 {
   display: flex;
   gap: .75rem;
 }
+
+.actions-wrapper {
+  padding-bottom: 5rem;
+  border-radius: .5rem;
+  display: flex;
+  justify-content: end;
+}
+
+.end {
+  margin-top: 1rem;
+}

@@ -45,8 +45,6 @@ input {
     
     font: var(--body-md);
     color: var(--danger);
-
-    margin-bottom: 1rem;
   }
 }
 

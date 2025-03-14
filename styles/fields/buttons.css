@@ -1,0 +1,25 @@
+button {
+  all: unset;
+  cursor: pointer;
+  font: var(--body-md);
+  padding: .75rem 1.5rem;
+  border-radius: .5rem;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+
+  .image-ticket {
+    flex: 0 0 1.25rem;
+    height: 1.25rem;
+    background-image: url(../../assets/icons/ticket.svg);
+    background-size: cover;
+  }
+
+  &.btn-invite {
+    color: var(--text-heading);
+    background-color: var(--brand-dark);
+  }
+}
