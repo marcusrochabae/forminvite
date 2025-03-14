@@ -64,3 +64,7 @@ img{
 .flex-1 {
   width: 100%;
 }
+
+.end {
+  margin-bottom: 5rem;
+}
