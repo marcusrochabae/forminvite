@@ -1,3 +1,12 @@
+
+.teste {
+  & input {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+}
+
 .radio-wrapper {
   margin-top: 1rem;
   display: grid;
@@ -37,14 +46,6 @@
     max-width: 1rem;
   }
 
-  & input,
-  & input:focus,
-  & input:hover {
-    all: unset;
-    position: absolute;
-    inset: 0;
-  }
-
   &:has(:checked){
     background-color: var(--input-stroke);
     & .radio-image-presencial {
@@ -55,4 +56,24 @@
       background-image: url(../../assets/Icons/video-hover.svg);
     }
   }
+}
+
+.radio-wrapper-color {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  gap: 1rem;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.radio-color {
+  background-color: var(--shape-button);
+  max-width: 2.5rem;
+  max-height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: .3rem;
+  border-radius: 100%;
+  margin-top: 1rem;
 }
