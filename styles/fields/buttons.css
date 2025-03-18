@@ -21,5 +21,9 @@ button {
   &.btn-invite {
     color: var(--text-heading);
     background-color: var(--brand-dark);
+
+    &:hover, &:focus {
+      background-color: var(--brand-mid);
+    }
   }
 }

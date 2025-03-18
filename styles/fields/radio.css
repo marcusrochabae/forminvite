@@ -1,5 +1,6 @@
 .radio-unset {
   position: relative;
+  box-sizing: border-box;
 
   & input {
     all: unset;
@@ -75,6 +76,36 @@
   border-radius: 100%;
   margin-top: 1rem;
   position: relative;
+
+  &:has(:checked), &:hover, &:focus-within{
+    outline: 2px solid var(--brand-light);
+  }
+}
+
+.radio-wrapper-theme{
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.375rem, 1fr));
+  gap: .5rem;
+}
+
+.radio-inner-theme {
+  margin-top: 1rem;
+  max-width: 8.375rem;
+  background-color: var(--shape-button);
+  border-radius: .5rem;
+  padding: .25rem;
+  display: grid;
+  position: relative;
+  
+  & img {
+    max-width: 7.875rem;
+    border-radius: .5rem;
+  }
+
+  & label {
+    text-align: center;
+  }
 
   &:has(:checked), &:hover, &:focus-within{
     outline: 2px solid var(--brand-light);

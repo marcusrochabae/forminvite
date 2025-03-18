@@ -50,6 +50,7 @@ main {
   display: flex;
   padding: 5rem 8.125rem;
   overflow: auto;
+  box-sizing: border-box;
 }
 
 .title {
