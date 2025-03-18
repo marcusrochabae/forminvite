@@ -1,5 +1,6 @@
 
-.teste {
+.radio-unset {
+  position: relative;
   & input {
     all: unset;
     position: absolute;
