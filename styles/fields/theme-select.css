@@ -2,6 +2,7 @@
   margin-top: 1rem;
   position: relative;
   font: var(--body-sm);
+  padding-top: .5rem;
 
   .theme-light {
     display: none;
