@@ -111,3 +111,77 @@
     outline: 2px solid var(--brand-light);
   }
 }
+
+
+.radio-inner-style {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  gap: .25rem;
+  position: relative;
+  border-radius: .5rem;
+  padding: .25rem;
+  margin: .15rem;
+
+  & .radio-image-presencial {
+    justify-content: center;
+    flex: 0 0 1rem;
+    height: 1rem;
+    background-image: url(../../assets/Icons/building-2.svg);
+  }
+
+  & .radio-image-online {
+    flex: 0 0 1rem;
+    height: 1rem;
+    background-image: url(../../assets/Icons/video.svg);
+
+  }
+
+  & img {
+    max-width: 1rem;
+  }
+
+  &:has(:checked){
+    background-color: var(--input-stroke);
+    & .radio-image-presencial {
+      background-image: url(../../assets/Icons/building-2-hover.svg);
+    }
+
+    & .radio-image-online {
+      background-image: url(../../assets/Icons/video-hover.svg);
+    }
+  }
+}
+
+.radio-inner-style {
+  display: flex;
+  height: 10px;
+
+  & .radio-image-presencial {
+    max-width: 2rem;
+    height: 4rem;
+    background-image: url(../../assets/Icons/building-2.svg);
+  }
+
+  & .radio-image-online {
+    flex: 0 0 1rem;
+    height: 1rem;
+    background-image: url(../../assets/Icons/video.svg);
+
+  }
+
+  & img {
+    max-width: 1rem;
+  }
+
+  &:has(:checked){
+    background-color: var(--input-stroke);
+    & .radio-image-presencial {
+      background-image: url(../../assets/Icons/building-2-hover.svg);
+    }
+
+    & .radio-image-online {
+      background-image: url(../../assets/Icons/video-hover.svg);
+    }
+  }
+}

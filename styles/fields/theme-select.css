@@ -1,0 +1,44 @@
+.theme-select {
+  margin-top: 1rem;
+  position: relative;
+  font: var(--body-sm);
+
+  .theme-light {
+    display: none;
+  }
+
+  & [type="checkbox"] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+
+  .theme-img {
+    flex: 0 0 4rem;
+    height: 2rem;
+    
+    background-image: url(../../assets/icons/dark-theme.svg);
+    background-repeat: no-repeat;
+    
+    
+  }
+
+  &:has(:checked) {
+    .theme-img{
+      border: none;
+      background-image: url(../../assets/Icons/light-theme.svg);
+    }
+
+    .theme-light {
+      display: block;
+    }
+
+    .theme-dark {
+      display: none;
+    }
+  }
+
+  div {
+    align-content: center;
+  }
+}

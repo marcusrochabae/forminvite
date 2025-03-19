@@ -8,15 +8,18 @@
   }
 }
 
-.checkbox-wrapper {
+.check-unset {
   position: relative;
-  margin-bottom: 1rem;
 
   & [type="checkbox"] {
     all: unset;
     position: absolute;
     inset: 0;
   }
+}
+
+.checkbox-wrapper {
+  margin-bottom: 1rem;
 
   .checkbox-image {
     flex: 0 0 1.25rem;

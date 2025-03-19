@@ -56,7 +56,7 @@
               <div class="flex-1">
                 <label for="title-flex">Tipo</label>
                 <div class="radio-wrapper radio-unset">
-                  <div class="radio-inner ">
+                  <div class="radio-inner">
                     <input type="radio" name="type-invite" value="presencial" id="presencial" checked>
                     <div class="radio-image-presencial"></div>
                     <label for="presencial">Presencial</label>
@@ -224,6 +224,34 @@
                 </div>
               </div>
             </div>
+
+            <div class="input-wrapper spacing-personalize">
+              <div class="flex-drop">
+                <div class="flex-1">
+                  <label for="title-flex">Estilo</label>
+                    <div class="theme-select flex check-unset">
+                      <div class="theme-img"></div>
+                      <input type="checkbox" name="theme" id="theme-party">
+                      <div class="theme-dark">Escuro</div>
+                      <div class="theme-light">Claro</div>
+                    </div>
+                  </label>
+                </div>
+
+                
+                
+                <div class="flex-1">
+                  <label for="title-flex">Foto de capa</label>
+                  <div class="img-sent">
+                    <div class="btn-img">
+                      <div class="img-select"></div>
+                      <legend>Selecionar</legend>
+                      <input type="file" id="photo" name="photo" required>
+                    </div>
+                    <span>Nenhum arquivo selecionado</span>
+                  </div>
+                </div>
+            </div>
           </fieldset>
 
           <fieldset class="about-event">
@@ -258,19 +286,19 @@
           </fieldset>
 
           <div class="terms-wrapper input-wrapper">
-            <div class="flex checkbox-wrapper">
+            <div class="flex checkbox-wrapper check-unset">
               <div class="checkbox-image"></div>
               <input type="checkbox" name="terms" value="terms" id="terms-politic">
               <label for="terms">Li e concordo com os <strong><u>Termos e Condições</u></strong> e com a <strong><u>Política de Privacidade</u></strong></label>
             </div>
   
-            <div class="flex checkbox-wrapper">
+            <div class="flex checkbox-wrapper check-unset">
               <div class="checkbox-image"></div>
               <input type="checkbox" name="terms" id="terms-email">
               <label for="terms">Aceito receber atualizações e promoções por e-mail</label>
             </div>
   
-            <div class="flex checkbox-wrapper">
+            <div class="flex checkbox-wrapper check-unset">
               <div class="checkbox-image"></div>
               <input type="checkbox" name="terms" id="terms-sms">
               <label for="terms">Aceito receber atualizações e promoções por SMS</label>

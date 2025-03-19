@@ -15,7 +15,7 @@
   --font-family: 'Open Sans', sans-serif;
   --body-md: 100 1rem/1.4 var(--font-family);
   --body-sm: 600 .875rem/1.4 var(--font-family);
-  --body-md: 600 .75rem/1.4 var(--font-family);
+  --body-xs: 600 .75rem/1.4 var(--font-family);
 
   --brand-light: #59B2FF;
   --brand-mid: #3487CF;
@@ -63,6 +63,12 @@ img{
 
 .flex-1 {
   width: 100%;
+}
+
+.flex-drop {
+  display: grid;
+  grid-template-columns: 34% 66%;
+  gap: 1rem;
 }
 
 .spacing-personalize {

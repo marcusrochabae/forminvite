@@ -1,0 +1,38 @@
+.img-sent {
+  display: flex;
+  position: relative;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: .25em 0;
+  align-items: center;
+  font: var(--body-md);
+
+  .btn-img {
+    background-color: var(--shape-button);
+    max-width: 7.438rem;
+    display: flex;
+    gap: .5rem;
+    border-radius: .5rem;
+    padding: .5rem;
+    align-items: center;
+    padding-left: .8rem;
+
+    & input {
+      all:unset;
+      cursor: pointer;
+      opacity: 0;
+      inset: 0;
+    }
+  
+    .img-select {
+      flex: 0 0 1rem;
+      height: 1rem;
+      background-image: url(../../assets/icons/upload.svg);
+      background-size: cover;
+    }
+  }
+
+  span {
+    color: var(--input-placeholder);
+  }
+}
